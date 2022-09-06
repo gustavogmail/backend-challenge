@@ -18,14 +18,14 @@ Receives a text and formats it according to the characters limit per line.
 The project is based on Simple Build Tool and developed using Scala language.
 
 ## How to run
-### You can run this project in a Docker container:
+### Please prefer to run this project in a Docker container:
 #### 1. Clone this repo from github
     git clone https://github.com/gustavogmail/backend-challenge.git
 #### 2. In the project root folder:
     docker build -t backend-challenge:v1 .
     docker run backend-challenge:v1
 
-## How to run locally
+### Running locally
 #### Make sure you have: 
 <ul>
     <li><a href="https://docs.scala-lang.org/getting-started/index.html">Scala</a> installed</li>

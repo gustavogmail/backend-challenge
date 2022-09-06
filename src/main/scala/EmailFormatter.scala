@@ -1,4 +1,4 @@
-object EmailFormatter extends App {
+object EmailFormatter {
   def textFormatter(text: String, limit: Int): String = {
     val words = text.split("\\s+")
     val paragraph = new StringBuilder
@@ -9,13 +9,7 @@ object EmailFormatter extends App {
       return row.length() + currentWord.length() + 1 > limit
     }
 
-    def appendLineSeparatorOnParagraph(): Unit = {
-      if (paragraph.nonEmpty) {
-        paragraph.append("\n")
-      }
-    }
-
-    def appendLineSeparatorInParagraph(): Unit = {
+    def appendLineBreakInParagraph(): Unit = {
       if (paragraph.nonEmpty) {
         paragraph.append("\n")
       }
@@ -26,7 +20,7 @@ object EmailFormatter extends App {
         currentWord = w
 
         if (lineLimitExceeded()) {
-          appendLineSeparatorInParagraph()
+          appendLineBreakInParagraph()
           paragraph.append(row.toString)
           row.setLength(0)
         }
@@ -41,7 +35,7 @@ object EmailFormatter extends App {
     goThroughWordByWord()
 
     if (row.nonEmpty) {
-      appendLineSeparatorOnParagraph()
+      appendLineBreakInParagraph()
       paragraph.append(row)
     }
 
