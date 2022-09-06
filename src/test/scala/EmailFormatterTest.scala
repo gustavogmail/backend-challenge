@@ -1,7 +1,7 @@
 import org.scalatest.funsuite.AnyFunSuite
 
 class EmailFormatterTest extends AnyFunSuite {
-  test("Scenario 5") {
+  test("Scenario 8") {
     /*
     Scenario 8:
     GIVEN the text is "One two three four five six seven eight nine ten" AND
@@ -17,13 +17,62 @@ class EmailFormatterTest extends AnyFunSuite {
     )
   }
 
+  test("Scenario 7") {
+    /*
+    Scenario 7:
+    GIVEN the text is "Crabbed Age and Youth Cannot live together: Youth is full of pleasance, Age is full of care" AND
+    GIVEN the limit is 0
+    WHEN the textFormatter is called
+    THEN the return is "Crabbed Age and\nYouth Cannot live\ntogether: Youth\nis full of\npleasance, Age is\nfull of care"
+    */
+    assert(
+      EmailFormatter.textFormatter(
+        Mocks.text_scenario7,
+        Mocks.limit_scenario7
+      ) === Mocks.expected_result_scenario7
+    )
+  }
+
+  test("Scenario 6") {
+    /*
+    Scenario 6:
+    GIVEN the text is "Youth like summer morn, Age like winter weather; Youth like summer brave, Age like winter bare:" AND
+    GIVEN the limit is 10
+    WHEN the textFormatter is called
+    THEN the return is "Youth like\nsummer\nmorn, Age\nlike\nwinter\nweather;\nYouth like\nsummer\nbrave, Age\nlike\nwinter\nbare:"
+    */
+    assert(
+      EmailFormatter.textFormatter(
+        Mocks.text_scenario6,
+        Mocks.limit_scenario6
+      ) === Mocks.expected_result_scenario6
+    )
+  }
+
+  test("Scenario 5") {
+    /*
+    Scenario 5:
+    GIVEN the text is "Youth is full of sports, Age's breath is short, Youth is nimble, Age is lame: Youth is hot and bold, Age is weak and cold,"
+    AND
+    GIVEN the limit is 12
+    WHEN the textFormatter is called
+    THEN the return is "Youth is\nfull of\nsports,\nAge's breath\nis short,\nYouth is\nnimble, Age\nis lame:\nYouth is hot\nand bold,\nAge is weak\nand cold,"
+    */
+    assert(
+      EmailFormatter.textFormatter(
+        Mocks.text_scenario5,
+        Mocks.limit_scenario5
+      ) === Mocks.expected_result_scenario5
+    )
+  }
+
   test("Scenario 4") {
     /*
     Scenario 4:
-    GIVEN the text is
-    AND GIVEN the limit is
+    GIVEN the text is "Youth is wild, and Age is tame:- Age, I do abhor thee; Youth, I do adore thee; O! my Love, my Love is young! Age, I do defy thee- O sweet shepherd, hie thee, For methinks thou stay'st too long."
+    AND GIVEN the limit is 20
     WHEN the textFormatter is called
-    THEN the return is
+    THEN the return is "Youth is wild, and\nAge is tame:- Age, I\ndo abhor thee;\nYouth, I do adore\nthee; O! my Love, my\nLove is young! Age,\nI do defy thee- O\nsweet shepherd, hie\nthee, For methinks\nthou stay'st too\nlong."
     */
     assert(
       EmailFormatter.textFormatter(

@@ -4,21 +4,21 @@ object Mocks {
   val limit_scenario8 = 5
   val expected_result_scenario8 = "One\ntwo\nthree\nfour\nfive\nsix\nseven\neight\nnine\nten"
 
-  val text_scenario7 = ""
-  val limit_scenario7 = 0
-  val expected_result_scenario7 = ""
+  val text_scenario7 = "Crabbed Age and Youth Cannot live together: Youth is full of pleasance, Age is full of care"
+  val limit_scenario7 = 17
+  val expected_result_scenario7 = "Crabbed Age and\nYouth Cannot live\ntogether: Youth\nis full of\npleasance, Age is\nfull of care"
 
-  val text_scenario6 = ""
-  val limit_scenario6 = 0
-  val expected_result_scenario6 = ""
+  val text_scenario6 = "Youth like summer morn, Age like winter weather; Youth like summer brave, Age like winter bare:"
+  val limit_scenario6 = 10
+  val expected_result_scenario6 = "Youth like\nsummer\nmorn, Age\nlike\nwinter\nweather;\nYouth like\nsummer\nbrave, Age\nlike\nwinter\nbare:"
 
-  val text_scenario5 = ""
-  val limit_scenario5 = 0
-  val expected_result_scenario5 = ""
+  val text_scenario5 = "Youth is full of sports, Age's breath is short, Youth is nimble, Age is lame: Youth is hot and bold, Age is weak and cold,"
+  val limit_scenario5 = 12
+  val expected_result_scenario5 = "Youth is\nfull of\nsports,\nAge's breath\nis short,\nYouth is\nnimble, Age\nis lame:\nYouth is hot\nand bold,\nAge is weak\nand cold,"
 
-  val text_scenario4 = ""
-  val limit_scenario4 = 0
-  val expected_result_scenario4 = ""
+  val text_scenario4 = "Youth is wild, and Age is tame:- Age, I do abhor thee; Youth, I do adore thee; O! my Love, my Love is young! Age, I do defy thee- O sweet shepherd, hie thee, For methinks thou stay'st too long."
+  val limit_scenario4 = 20
+  val expected_result_scenario4 = "Youth is wild, and\nAge is tame:- Age, I\ndo abhor thee;\nYouth, I do adore\nthee; O! my Love, my\nLove is young! Age,\nI do defy thee- O\nsweet shepherd, hie\nthee, For methinks\nthou stay'st too\nlong."
 
   val text_scenario3 = "Sadly, a kernel by itself gets you nowhere. To get a working system you need a shell, compilers, a library etc. These are separate parts and may be under a stricter (or even looser) copyright. Most of the tools used with linux are GNU software and are under the GNU copyleft. These tools aren't in the distribution - ask me (or GNU) for more info."
   val limit_scenario3 = 45
