@@ -15,7 +15,7 @@
 
 Receives a text and formats it according to the characters limit per line.
 
-The project is based on Simple Build Tool and developed using Scala language.
+The project is based on Simple Build Tool and developed using Scala programming language.
 
 ## How to run
 ### Please prefer to run this project in a Docker container:
