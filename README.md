@@ -1,4 +1,4 @@
-# The Email Editor
+# The Email Formatter
 
 <p align="center">
   <img src="./images/logo.png" height="200" width="300" />
@@ -11,7 +11,7 @@
 
 ## Overview
 
-<strong>The Email Editor.</strong>
+<strong>The Email Formatter.</strong>
 
 Receives a text and formats it according to the characters limit per line.
 
