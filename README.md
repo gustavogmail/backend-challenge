@@ -34,7 +34,7 @@ The project is based on Simple Build Tool and developed using Scala programming 
 </ul>
 
 #### 1. Clone this repo from github
-    git clone https://github.com/gustavogmail/oranumAutomatedSmokeTests.git
+    git clone https://github.com/gustavogmail/backend-challenge.git
 #### 2. Add sbt\bin directory to your System Environment path variable
 
 #### 3. (In the project's root folder) run all the unit test scenarios:
