@@ -28,16 +28,16 @@ object EmailFormatter {
         if (row.nonEmpty) {
           row.append(' ')
         }
+
         row.append(w)
       }
     }
 
     goThroughWordByWord()
 
-    if (row.nonEmpty) {
-      appendLineBreakInParagraph()
-      paragraph.append(row)
-    }
+    // The last row
+    appendLineBreakInParagraph()
+    paragraph.append(row)
 
     return paragraph.toString
   }
