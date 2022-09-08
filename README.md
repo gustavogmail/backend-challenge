@@ -1,4 +1,4 @@
-# The Email Editor
+# The Email Formatter
 
 <p align="center">
   <img src="./images/logo.png" height="200" width="300" />
@@ -11,7 +11,7 @@
 
 ## Overview
 
-<strong>The Email Editor.</strong>
+<strong>The Email Formatter.</strong>
 
 Receives a text and formats it according to the characters limit per line.
 
@@ -34,7 +34,7 @@ The project is based on Simple Build Tool and developed using Scala programming 
 </ul>
 
 #### 1. Clone this repo from github
-    git clone https://github.com/gustavogmail/oranumAutomatedSmokeTests.git
+    git clone https://github.com/gustavogmail/backend-challenge.git
 #### 2. Add sbt\bin directory to your System Environment path variable
 
 #### 3. (In the project's root folder) run all the unit test scenarios:
